@@ -11,8 +11,11 @@
     First, we briefly set a to diff, which is the right side of the above number line. Then, when we add b and diff (and store that value in b), we get a_O. We now have b = a_O and a = diff. All that's left to do is to set a equal to a_O, which is just b - a. The code below implements this.
 </p>
 <code>
-    1 // Example for a = 9, b = 4 <br>
-    2 a = a - b // a = 9 - 4 = 5 <br>
-    3 b = a + b // b = 5 + 4 = 9 <br>
-    4 a = b - a // a = 9 - 5 <br>
+    // Example for a = 9, b = 4
 </code>
+
+```python
+a = a - b # a = 9 - 4 = 5
+b = a + b # b = 5 + 4 = 9
+a = b - a # a = 9 - 5
+```
