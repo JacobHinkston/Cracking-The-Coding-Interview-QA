@@ -3,8 +3,9 @@
     <b>
         All content in this repository was taken from 
         <a href="https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850">Cracking The Coding Interview: 6th Edition</a> 
-        and does not belong to me. Please support the author, Gayle Laakmann McDowell,if you benefited from the material provided by purchasing a copy of the book. 
+        and does not belong to me. Please support the author, Gayle Laakmann McDowell, if you benefited from the material provided by purchasing a copy of the book. 
     </b>
+    <br/>
     The material used in this repository is for educational purposes only. There is a wealth of knowledge beyond this repository that the book will provide. 
 </p>
 <h2>What is this repo for?</h2>
@@ -14,7 +15,7 @@
 <h2>How do I use it?</h2>
 <p>
     The interview questions are organized by 1. Topic, or 2. Difficulty. Start where ever you feel comfortable. The goal is to complete all 189 questions, one day at a time. One question a-day keeps the brain farts away! Stay sharp and code on so that you can slay that next coding interview! 
-    <br>
+    <br/>
     I plan on adding questions from Code practicing websites like
     <ul>
         <li>
@@ -41,7 +42,9 @@
 <p>
     If you have any questions or think something could be changed/added/updated, please make a pull request and I will review it. 
 </p>
-<a href="mailto:jacobhinkston@gmail.com">Email me!</a>
-<a href="https://linkedin.com/jacobhinkston">Add me on Linkedin!</a>
+<h2>Contact</h2>
+<a href="mailto:jacobhinkston@gmail.com">Email</a>
+<br/>
+<a href="https://linkedin.com/in/jacobhinkston">Linkedin</a>
 
 
