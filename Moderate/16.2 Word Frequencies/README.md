@@ -36,28 +36,28 @@ int getFrequency(String[] book, String word) {
 </p>
 
 ```java
-    HashMap<String, Integer> setupDictionary(String[] book) {
-        HashMap<String, Integer> table = new HashMap<String, Integer>()
-        for (String word : book) { 
-            word = word.toLowerCase();
-            if (word.trim() != "") {
-                if (!table.containsKey(word)) {  
-                     table.put(word, 0);  
-                }
-                table.put(word, table.get(word) + l);  
+HashMap<String, Integer> setupDictionary(String[] book) {
+    HashMap<String, Integer> table = new HashMap<String, Integer>()
+    for (String word : book) { 
+        word = word.toLowerCase();
+        if (word.trim() != "") {
+            if (!table.containsKey(word)) {  
+                 table.put(word, 0);  
             }
-        } 
-        return table;
-    } 
-    
-    int getFrequency(HashMap<String, Integer> table, String word) {
-        if (table == null || word == null) return -1; 
-        word = word.toLowerCase() 
-        if (table.containsKey(word)) { 
-             return table.get(word) 
+            table.put(word, table.get(word) + l);  
         }
-        return 0
+    } 
+    return table;
+} 
+
+int getFrequency(HashMap<String, Integer> table, String word) {
+    if (table == null || word == null) return -1; 
+    word = word.toLowerCase() 
+    if (table.containsKey(word)) { 
+         return table.get(word) 
     }
+    return 0
+}
 ```
 <p>
     Note that a problem like this is actually relatively easy. Thus, the interviewer is going to be looking heavily at how careful you are. Did you check for error conditions? 
