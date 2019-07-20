@@ -8,8 +8,10 @@
 <code>
     Input{1,3,15,11,2}, {23,127,235,19,8}
 </code>
+</br>
+</br>
 <code>
-    Output 3.That is, the pair (11, 8).
+    Output 3. That is, the pair (11, 8).
 </code>
 
 <h3>
@@ -68,6 +70,8 @@ int findSmallestDifference(int[] array1, int[] array2) {
 <code>
     A: {1, 2, 11, IS}
 </code>
+</br>
+</br>
 <code>
     B: {4, 12, 19, 23, 127, 235}
 </code>
