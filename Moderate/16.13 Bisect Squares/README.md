@@ -23,12 +23,12 @@ public class Square {
         return new Point((this.left + this.right) / 2.0, (this.top + this.bottom) / 2.0); 
     } 
     
-    /* Return the point where the line segment connecting mid1 and mid2 intercepts 9 * the edge of square 1. That is, draw a line from mid2 to mid1, and continue it 10 * out until the edge of the square. */
+    /* Return the point where the line segment connecting mid1 and mid2 intercepts the edge of square 1. That is, draw a line from mid2 to mid1, and continue it 10 out until the edge of the square. */
     public Point extend(Point mid1, Point mid2, double size) { 
     /* Find what direction the line mid2 -> midi goes. */ 
     double xdir midl.x < mid2.x ? -1 : 1; 
     double ydir = mid1.y < mid2.y ? -1 : 1;
-    /* If mid1 and mid2 have the same x value, then the slope calculation will 17 * throw a divide by 0 exception. So, we compute this specially. */ 
+    /* If mid1 and mid2 have the same x value, then the slope calculation will throw a divide by 0 exception. So, we compute this specially. */ 
     if (mid1.x == mid2.x) { 
         return new Point(midl.x, mid1.y + ydir * size / 2.0); 
     }
@@ -37,7 +37,7 @@ public class Square {
     double y1 = 0; 
 
     /* 
-        Calculate slope using the equation (y1 - y2) I (xl - x2). 27 * Note : if the slope is "steep" (>1) then the end of the line segment will 28 * hit size I 2 units away from the middle on the y axis. If the slope is 29 * "shallow" ((1) the end of the line segment will hit size I 2 units away 36 * from the middle on the x axis. 
+        Calculate slope using the equation (y1 - y2) I (xl - x2). 27 * Note : if the slope is "steep" (>1) then the end of the line segment will hit size I 2 units away from the middle on the y axis. If the slope is "shallow" ((1) the end of the line segment will hit size I 2 units away from the middle on the x axis. 
     */
     if (Math.abs(slope) == 1) { 
         xl = mid1.x + xdir * size / 2.0; 
@@ -53,14 +53,14 @@ public class Square {
 } 
 
 public Line cut (Square other) {
-    /* Calculate where a line between each middle would collide with the edges of 46 * the squares */ 
+    /* Calculate where a line between each middle would collide with the edges of the squares */ 
     Point p1 = extend(this.middle(), other.middle(), this.size); 
     Point p2 = extend(this.middle(), other.middle(), -1 * this.size); 
     Point p3 = extend(other.middle(), this.middle(), other.size); 
     Point p4 = extend(other.middle(), this.middle(), -1 * other.size); 
     
     /* 
-        Of above points, find start and end of lines. Start is farthest left (with 53 * top most as a tie breaker) and end is farthest right (with bottom most as 54 * a tie breaker. 
+        Of above points, find start and end of lines. Start is farthest left (with top most as a tie breaker) and end is farthest right (with bottom most as a tie breaker. 
     */ 
     Point start = p1; 
     Point end = p1; 
